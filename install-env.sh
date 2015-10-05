@@ -5,7 +5,7 @@ sudo apt-get install -y apache2
 
 echo "Installed apache2" >> /tmp/webserver_install_log.txt
 
-sudo apt-get install git
+sudo apt-get install -y git
 
 echo "Installed Git" >> /tmp/webserver_install_log.txt
 
