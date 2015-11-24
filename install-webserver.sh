@@ -24,4 +24,6 @@ cd /var/www/html
 
 sudo php /var/www/html/setup.php &> /tmp/database-setup.txt
 
+chmod 600 /var/www/html/setup.php
+echo "Changing permission to setup.php"
 echo "Hello!" > /tmp/hello.txt
