@@ -13,6 +13,9 @@ mv ./itmo-544-444-fall2015/images /var/www/html/images
 mv ./itmo-544-444-fall2015/index.html /var/www/html
 mv ./itmo-544-444-fall2015/page2.html /var/www/html
 mv ./itmo-544-444-fall2015/*.php /var/www/html
+mv ./itmo-544-444-fall2015/*.css /var/www/html
+mv ./itmo-544-444-fall2015/*.js /var/www/html
+
 
 curl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt
 
