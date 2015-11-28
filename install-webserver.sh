@@ -2,7 +2,7 @@
 
 sudo apt-get update -y
 sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql
-
+sudo apt-get install php5 php5-imagick
 sudo apt-get install -y git
 git clone https://github.com/Vidyapreethi/itmo-544-444-fall2015.git
 
@@ -28,5 +28,5 @@ cd /var/www/html
 sudo php /var/www/html/setup.php &> /tmp/database-setup.txt
 
 chmod 600 /var/www/html/setup.php
-echo "Changing permission to setup.php"
+echo "Changed permission to setup.php"
 echo "Hello!" > /tmp/hello.txt
