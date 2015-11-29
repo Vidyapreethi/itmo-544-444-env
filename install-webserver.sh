@@ -1,17 +1,17 @@
 #!/bin/bash
 
-sudo apt-get update -y
-sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql
-sudo apt-get install php5-dev imagemagick libmagickwand-dev
-sudo pecl install imagick
-sudo apt-get install php5-imagick
-sudo service apache2 restart
-sudo apt-get install -y git
+sudo apt-get update -y >> /tmp/webserver_install_log.txt
+sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql >> /tmp/webserver_install_log.txt
+sudo apt-get install -y php5-dev imagemagick libmagickwand-dev >> /tmp/webserver_install_log.txt
+sudo apt-get install -y php5-imagick >> /tmp/webserver_install_log.txt
+sudo service apache2 restart >> /tmp/webserver_install_log.txt
+sudo apt-get install -y git >> /tmp/webserver_install_log.txt
+
+echo "===============================\n\n\nCloning Git Repo" >> /tmp/webserver_install_log.txt
 git clone https://github.com/Vidyapreethi/itmo-544-444-fall2015.git
-
-
 echo "Cloned Git Repo" >> /tmp/webserver_install_log.txt
 
+echo "===============================\n\n\nMoving Files to Webserver" >> /tmp/webserver_install_log.txt
 mv ./itmo-544-444-fall2015/resources /var/www/html/resources
 mv ./itmo-544-444-fall2015/images /var/www/html/images
 mv ./itmo-544-444-fall2015/index.html /var/www/html
