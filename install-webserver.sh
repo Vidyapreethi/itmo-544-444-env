@@ -30,5 +30,4 @@ cd /var/www/html
 sudo php /var/www/html/setup.php &> /tmp/database-setup.txt
 
 chmod 600 /var/www/html/setup.php
-echo "Changed permission to setup.php"
-echo "Hello!" > /tmp/hello.txt
+echo "Changed permission to setup.php" >> /tmp/webserver_install_log.txt
