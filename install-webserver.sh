@@ -2,8 +2,10 @@
 
 sudo apt-get update -y
 sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql
-sudo apt-get install php5-imagick
-sudo service apache2 reload
+sudo apt-get install php5-dev imagemagick libmagickwand-dev
+sudo pecl install imagick
+sudo apt-get install php5-imagick
+sudo service apache2 restart
 sudo apt-get install -y git
 git clone https://github.com/Vidyapreethi/itmo-544-444-fall2015.git
 
